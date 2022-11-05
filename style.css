@@ -1,0 +1,122 @@
+body{
+    /* my whole web screen will havae this background picture */
+    background-image: url('./Images/launches_header_desktop.jpg');
+   
+}
+/* My welcome text pushed to the center given size and style */
+#welcome{
+    margin-left: 50vh;
+    font-size: medium;
+    font-weight:bold;
+    font-style: oblique;
+}
+/* below ajustes space between all h1 texts */
+h1{
+    margin-left: 200px;
+    padding-bottom: 50px;
+   
+}
+/* bellow pushes left and gives aqua color to the text */
+p, h3, h2{
+    margin-left: 50px;
+    color: aqua;
+}
+/* specifies a size and hight and color. also brings to left side */
+#CButton{
+    width: 100px;
+    height: 30px;
+    background-color: azure;
+    border-radius: 200px;  /* This will curve our button or round shape*/
+    border-color: aquamarine;
+    margin-left: 75px;
+}
+#CountButton{  /* refering to a class name on our html and assigning it various size and color*/
+    width: 100px;
+    height: 30px;
+    background-color: azure;
+    border-radius: 200px;  /* This will curve our button or round shape*/
+    border-color: aquamarine;
+    margin-left: 220px;
+}
+.StopButton{  /* refering to a class name on our html and assigning it various size and color*/
+    width: 100px;
+    height: 30px;
+    background-color: rgb(15, 156, 156);
+    border-radius: 200px;         /* This will curve our button or round shape*/
+    border-color: rgb(255, 185, 127);
+}
+img{
+  margin-left: 80%; 
+  width: 100px;  /*minimized the size of the image */
+  background-color: rgb(153, 39, 8);
+    
+}
+button{
+   /* bringing my button to left */
+    margin-left: 100px;
+   
+}
+#blast{
+    /* bringing my button to left */
+    margin-left: 50px;
+}
+/* My contents inside this div displayed flex and brought up to left */
+div{
+    display:flex;
+    margin-left: 100px;
+}
+#info{
+    margin-left: 50px;
+}
+
+#music{
+margin-left: 50px;
+}
+ #Pmusic, #Smusic{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(105, 106, 5);
+    border-radius: 200px;  /* This will curve our button or round shape*/
+    border-color: aquamarine;
+    margin-left: 80px;
+} 
+/* music player displayed flex with its text */
+#media{
+    display: flex;
+   
+}
+
+/* setting a text color of the whole body of a table */
+tbody{
+    color: aqua;
+}
+/* This defines the size and color of head title of the table */
+th{
+    font-size: 150%;
+    color: yellowgreen;
+    
+}
+/* color h1 */
+h1{
+    color: aqua;
+}
+/* color uat id text */
+#uat{
+    color:rgb(68, 255, 0) 
+}
+/* pushing to the right */
+#toggle{
+    margin: right 50px;;
+}
+/* toggle buttons color and style */
+#startbutton{
+    color: greenyellow;
+    border-radius: 250px;
+    width: fit-content;
+}
+/* toggle buttons color and style */
+#stopbutton{
+    color: red;
+    border-radius: 250px;
+    width: fit-content;
+}

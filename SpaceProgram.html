@@ -1,0 +1,169 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <!-- Tamuru Selamu SCC102 -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Line 10 showing hot to link our style sheet -->
+    <link rel="stylesheet" href="./style.css"> 
+    <!-- Line 12 is also showing how to link our java script sheet -->
+    <script src="./script.js"></script>
+    
+    <!-- code below shows the title on the browser -->
+    <title>UAT Space Program</title> 
+     <!--Line 12 is how to link my scc file with html  -->
+    
+    
+</head>
+<body>
+    <!-- The line below is how I inserted the image using image tag -->
+    <img src="./Images/UATspaceLogo-2.jpg" alt="UAT logo">  
+     <!--line 19 is just headline using size h2  -->
+    
+    <h1 id="uat">UAT Space Program</h1>
+    <!-- Two lines below are just text using p tag -->
+    <p id="welcome">Welcome to space launching center.Pleace provide the information below<br> before testing the launch count down time.</p>
+
+   
+    <!-- the below just promts to fill in information -->
+    <h3>Please Enter your full Name:</h3><br>  
+    <form id="info" onsubmit="return false">
+        <!-- below two lines creates a blank form to type it in a text -->
+     <p>First Name:   <input type="text" id="fname"></p> <br><br>
+     <p>Last Name:    <input type="text" id="lname"></p> <br><br>
+    <!-- below line only accepts numbers  -->
+    <p>Badge Number: <input type="number" id="badgeN"></p> <br><br>
+    <!-- submit button that collects all inputs -->
+    <input id="CButton" type="submit" onclick="Submited();">
+</form>
+<div id="infos">
+<!-- below collects fullname -->
+<h3 id="wholeName">Your Full Name Is:</h3>
+<!-- below displays the badge number -->
+<h3 id="bnum">Your Badge is:</h3><br>
+</div>
+     <!-- line 30 is just a text directing to click for count down -->
+     <h3>Please click for count down</h3>  
+     <!-- line 32 two buttons start and stop with their event listener on click function name. -->
+     <button onclick="CountDown()" id="CountButton">START</button> <button onclick="CountStop()" class="StopButton">STOP</button>
+    
+    <!-- launch gets updated counting down -->
+    <h1 id="blast">Launch:</h1>
+    
+    <!-- Enabling and disabling buttons -->
+<section id="media">
+    <h1 id="music">Play Music:</h1>
+    <audio controls autoplay>
+        <source src="./Over_the_Horizon.mp3" type="audio/mpeg">
+    </audio>
+    <!-- <button onclick="start()"; id="Pmusic">Play</button><button onclick="stop()" id="Smusic">Stop</button> -->
+</section>
+<!-- How to create a table -->
+<h2>Data Table</h2>
+    <table class="table" >
+        <!-- created two colomns with 55% width -->
+     <table id="data" border="2" width="55%"> 
+    
+        <!-- Table row and header text provided color and font style -->
+        <thead>
+            <tr style ="font-family:fantasy">
+                <th>Data Type</th>
+                <th>Reading</th>
+            </tr>
+        </thead>
+        <!-- table body created and given their data for all 21 table row data sections -->
+            <tr id="R1">
+                <td>Time elapsed</td>
+                <td>15 Seconds</td>
+            </tr>
+            <tr id="R2">
+                <td>Latitude:</td>
+                <td>0</td>
+            </tr>
+            <tr id="R3">
+                <td>Longitude:</td>
+                <td>0</td>
+            </tr>
+            <tr id="R4">
+                <td>GPS Altitude:</td>
+                <td>0</td>
+            </tr>
+            <tr id="R5">
+                <td>BMP Sensor Altitude:</td>
+                <td>30383.04</td>
+            </tr>
+            <tr id="R6">
+                <td>BMP Sensor Pressure:</td>
+                <td>2.34</td>
+            </tr>
+            <tr id="R7">
+                <td>BMP Sensor Temperature:</td>
+                <td>0</td>
+            </tr>
+            <tr id="R8">
+                <td>Digital Sensor Temperature:</td>
+                <td>24.12</td>
+            </tr>
+            <tr id="R9">
+                <td>CSS Sensor Temperature:</td>
+                <td>25</td>
+            </tr>
+            <tr id="R10">
+                <td>CSS Sensor eCO2:</td>
+                <td>400</td>
+            </tr>
+            <tr id="R11">
+                <td>CSS Sensor TVOC:</td>
+                <td>0</td>
+            </tr>
+            <tr id="R12">
+                <td>UV:</td>
+                <td>0</td>
+            </tr>
+            <tr id="R13">
+                <td>Accel X:</td>
+                <td>-0.87</td>
+            </tr>
+            <tr id="R14">
+                <td>Accel Y:</td>
+                <td>-0.02</td>
+            </tr>
+            <tr id="R15">
+                <td>Accel Z:</td>
+                <td>9.61</td>
+            </tr>
+            <tr id="R16">
+                <td>Magnetic X:</td>
+                <td>0.13</td>
+            </tr>
+            <tr id="R17">
+                <td>Magnetic Y:</td>
+                <td>0.57</td>
+            </tr>
+            <tr id="R18">
+                <td>Magnetic Z:</td>
+                <td>-0.24</td>
+            </tr>
+            <tr id="R19">
+                <td>Gyro X:</td>
+                <td>4.66</td>
+            </tr>
+            <tr id="R20">
+                <td>Gyro Y:</td>
+                <td>0.01</td>
+            </tr>
+            <tr id="R21">
+                <td>Gyro Z:</td>
+                <td>-0.4</td>
+            </tr>
+            </tbody >
+       
+       </table><br><br>
+   
+       <button id="startbutton" onclick="start();" onclick="playStation();">Start</button>
+       <button id="stopbutton" onclick="stop();">Stop</button> <br><br>
+   
+    </body>
+</html> 
